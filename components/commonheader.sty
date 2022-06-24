@@ -1,0 +1,41 @@
+\usepackage{geometry}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{bbding}
+\usepackage{import}
+\usepackage{emoji}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{varwidth}
+\usepackage{tcolorbox}
+
+\setemojifont{TwemojiMozilla}
+
+\pagestyle{empty}
+\geometry{margin=0.5in}
+\setlength\parindent{9pt}
+\setlist{nosep}
+\renewcommand\labelitemi{--}
+
+\definecolor{highlight}{RGB}{0,0,0}
+
+\newcommand{\github}{\textcolor{rgb:red,110;green,84;blue,148}{\faGithubSquare}}
+\newcommand{\linkedin}{\textcolor{rgb:red,6;green,108;blue,170}{\faLinkedinSquare}}
+\newcommand{\name}[1]{\begin{center}\section*{\Huge \color{highlight} #1}\vspace{-0.5cm}\end{center}}
+\newcommand{\topinfo}[1]{\begin{center}\vspace{-0.1cm}#1\vspace{-0.3cm}\end{center}}
+\newcommand{\resumesection}[1]{\vspace{-0.5cm}\section*{\color{highlight}#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
+\newcommand{\skillset}[1]{\begin{center}{#1}\end{center}}
+\newcommand{\doublecoulumnlist}[2]{\begin{varwidth}[t]{.5\textwidth}
+{#1}
+\end{varwidth}% <---- Don't forget this %
+\hspace{4em}% <---- Don't forget this %
+\begin{varwidth}[t]{.5\textwidth}
+{#2}
+\end{varwidth}}
+\newcommand{\skill}[1]{\tcbox[size=small,on line,halign=center, colframe=black, colback=grey!5]{#1}}
+
+\renewcommand{\familydefault}{\sfdefault}

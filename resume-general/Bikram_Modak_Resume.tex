@@ -1,0 +1,42 @@
+% To hide ugly borders around hyper links added "hidelinks"
+\documentclass[hidelinks,11pt]{article}
+
+\usepackage{../components/commonheader}
+
+\begin{document}
+
+% Name and Contact info
+
+\subimport{../components/}{background.tex}
+
+% Skills
+
+\resumesection{\emoji{hand-with-fingers-splayed} Skills}
+
+\subimport{../components/}{skills.tex}
+
+% Work Experience
+
+\resumesection{\emoji{briefcase} Work Experience}
+
+\subimport{../components/experiences/}{intel.tex}
+
+\subimport{../components/experiences/}{newton-school.tex}
+
+% Projects
+
+\resumesection{\emoji{wrench} Projects}
+
+\subimport{../components/projects/}{quiz-app.tex}
+
+\subimport{../components/projects/}{crypto-price-alert.tex}
+
+\subimport{../components/projects/}{arduino-bot.tex}
+
+% Education
+
+\resumesection{\emoji{books} Education}
+
+\subimport{../components/education}{sit.tex}
+
+\end{document}
